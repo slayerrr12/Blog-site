@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction to JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffae00;
+}
+
+/* Main Styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+h2 {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  animation: slideInDown 0.5s ease-in-out;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+pre {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+code {
+  font-family: Consolas, monospace;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: disc;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Button Styles */
+.button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #ffae00;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  animation: slideInUp 0.5s ease-in-out;
+}
+
+footer p {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Animations */
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1
+  }
+}
+
+</style>
+<body>
+	<header>
+		<h1>Introduction to MongoDB and JavaScript</h1>
+		<nav>
+			<ul>
+				<li><a href="#what-is-mongodb">What is MongoDB?</a></li>
+				<li><a href="#mongodb-syntax">MongoDB Syntax</a></li>
+				<li><a href="#mongodb-features">MongoDB Features</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="what-is-mongodb">
+			<h2>What is MongoDB?</h2>
+			<p>MongoDB is a NoSQL document-oriented database that uses JSON-like documents with optional schemas. It is designed to be scalable, flexible and performant, and can be used for a wide range of applications, from small-scale web applications to large-scale enterprise systems.</p>
+			<p>MongoDB stores data in collections, which are analogous to tables in relational databases. Each document in a collection is represented as a JSON object, which can have a flexible schema.</p>
+			<p>JavaScript is often used in conjunction with MongoDB to create dynamic web applications. With the use of the MongoDB Node.js driver, JavaScript can be used to interact with the database, perform CRUD (Create, Read, Update, Delete) operations, and handle errors.</p>
+		</section>
+		<section id="mongodb-syntax">
+			<h2>MongoDB Syntax</h2>
+			<p>The syntax for interacting with MongoDB is similar to that of other databases, but with some key differences due to its document-oriented nature.</p>
+			<p>Here is an example of MongoDB syntax:</p>
+			<pre>
+				<code>db.customers.insertOne( {
+   name: "John Doe",
+   email: "johndoe@email.com",
+   age: 30
+} );</code>
+			</pre>
+			<p>In this example, we are inserting a document into the "customers" collection. The document contains a name, email, and age field, with corresponding values.</p>
+		</section>
+		<section id="mongodb-features">
+			<h2>MongoDB Features</h2>
+			<p>MongoDB includes many features that make it a popular choice for web applications.</p>
+			<ul>
+				<li><strong>Schema Flexibility:</strong> MongoDB allows you to have flexible schema, meaning you can store documents with different fields and structures in the same collection.</li>
+				<li><strong>Scalability:</strong> MongoDB is designed to be highly scalable, both vertically and horizontally. It can handle large amounts of data and can be distributed across multiple machines.</li>
+				<li><strong>Aggregation:</strong> MongoDB includes a powerful aggregation framework, which allows you to perform complex data analysis and manipulation.</li>
+				<li><strong>Indexing:</strong> MongoDB includes support for indexing, which can improve the performance of queries.</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 My Blog. All rights reserved.</p>
+	</footer>
+</body>
+</html>
+

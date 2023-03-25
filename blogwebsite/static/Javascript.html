@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction to JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffae00;
+}
+
+/* Main Styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+h2 {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  animation: slideInDown 0.5s ease-in-out;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+pre {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+code {
+  font-family: Consolas, monospace;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: disc;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Button Styles */
+.button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #ffae00;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  animation: slideInUp 0.5s ease-in-out;
+}
+
+footer p {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Animations */
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1
+  }
+}
+
+</style>
+<body>
+	<header>
+		<h1>Introduction to JavaScript</h1>
+		<nav>
+			<ul>
+				<li><a href="#what-is-javascript">What is JavaScript?</a></li>
+				<li><a href="#javascript-syntax">JavaScript Syntax</a></li>
+				<li><a href="#javascript-features">JavaScript Features</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="what-is-javascript">
+			<h2>What is JavaScript?</h2>
+			<p>JavaScript is a high-level, dynamic programming language that is commonly used for creating interactive web applications. It is often referred to as the "language of the web," and is essential for building modern web applications.</p>
+			<p>JavaScript code can be included in HTML documents using the <code>&lt;script&gt;</code> tag, or it can be stored in separate files and included in HTML documents using the <code>&lt;script src="filename.js"&gt;</code> tag.</p>
+		</section>
+		<section id="javascript-syntax">
+			<h2>JavaScript Syntax</h2>
+			<p>JavaScript syntax is similar to other programming languages, such as Java and C++. It includes statements, variables, functions, and expressions.</p>
+			<p>Here is an example of JavaScript syntax:</p>
+			<pre>
+				<code>var x = 10;
+var y = 5;
+var z = x + y;</code>
+			</pre>
+			<p>In this example, we have defined three variables: x, y, and z. We have assigned the value 10 to the variable x, the value 5 to the variable y, and the sum of x and y to the variable z.</p>
+		</section>
+		<section id="javascript-features">
+			<h2>JavaScript Features</h2>
+			<p>JavaScript includes many features that make it a powerful and versatile programming language.</p>
+			<ul>
+				<li><strong>Functions:</strong> JavaScript allows you to define and call functions, which can be used to group code and perform specific tasks.</li>
+				<li><strong>Control Structures:</strong> JavaScript includes control structures, such as if/else statements and loops, that allow you to control the flow of your code.</li>
+				<li><strong>DOM Manipulation:</strong> JavaScript can be used to manipulate the Document Object Model (DOM), which allows you to modify the content and style of web pages dynamically.</li>
+				<li><strong>AJAX:</strong> JavaScript can be used to make asynchronous requests to servers, which allows web applications to update content without requiring a full page refresh.</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 My Blog. All rights reserved.</p>
+	</footer>
+</body>
+</html>
+

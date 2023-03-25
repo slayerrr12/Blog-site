@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Node.js Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      font-weight: normal;
+    }
+
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    header nav li {
+      margin: 0 1em;
+    }
+
+    header nav li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    main {
+      margin: 2em;
+    }
+
+    section {
+      margin-bottom: 2em;
+    }
+
+    section h2 {
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+    }
+
+    pre {
+      background-color: #eee;
+      padding: 1em;
+      overflow-x: auto;
+    }
+
+    code {
+      font-family: monospace;
+      font-size: 1em;
+    }
+
+    ul {
+      margin-left: 2em;
+      padding-left: 0;
+      list-style: disc;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Introduction to Node.js</h1>
+    <nav>
+      <ul>
+        <li><a href="#what-is-nodejs">What is Node.js?</a></li>
+        <li><a href="#nodejs-syntax">Node.js Syntax</a></li>
+        <li><a href="#nodejs-features">Node.js Features</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="what-is-nodejs">
+      <h2>What is Node.js?</h2>
+      <p>Node.js is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside
+        of a web browser. It allows developers to build server-side applications with JavaScript, which was
+        traditionally used only for client-side scripting in web browsers.</p>
+      <p>Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. It includes a
+        built-in package manager called npm, which allows developers to easily share and reuse code.</p>
+    </section>
+    <section id="nodejs-syntax">
+      <h2>Node.js Syntax</h2>
+      <p>Node.js syntax is similar to other programming languages, such as JavaScript, Java, and C++. It includes
+        statements, variables, functions, and expressions.</p>
+      
+      
+    </pre>
+
+      <p>The complete code for this example would look like:</p>
+      <pre>
+      <code>const http = require('http');
+const hostname = '127.0.0.1';
+const port = 3000;
+const server = http.createServer((req, res) => {
+res.statusCode = 200;
+res.setHeader('Content-Type', 'text/plain');
+res.end('Hello, World!\n');
+});
+server.listen(port, hostname, () => {
+console.log(Server running at http://${hostname}:${port}/);
+});</code>
+</pre>
+<h1>Explaination</h1>
+      <ul>
+        <li>Create a Node.js HTTP server:</li>
+        <ul>
+          <li>Require the built-in http module with the following code: <code>const http = require('http');</code></li>
+          <li>Define the hostname and port number for the server with the following code:
+            <code>const hostname = '127.0.0.1';</code> and <code>const port = 3000;</code>
+          </li>
+          <li>Create the server with the following code:
+            <pre>
+        <code>
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello, World!\n');
+});
+        </code>
+      </pre>
+            This code creates an HTTP server that listens for incoming requests on the specified hostname and port. When
+            a request is received, the server sends a response with a status code of 200 and a message of "Hello,
+            World!".
+          </li>
+        </ul>
+        <li>Start the server with the following code:
+          <pre>
+      <code>
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+      </code>
+    </pre>
+          This code tells the server to start listening for incoming requests on the specified hostname and port. When
+          the server starts successfully, it logs a message to the console with the URL where the server is running.
+        </li>
+      </ul>
+
+    </section>
+    <section id="nodejs-features">
+      <h2>Node.js Features</h2>
+      <ul>
+        <li>
+        <p>Node.js has a built-in module called HTTP, which allows Node.js to transfer data over the Hyper Text Transfer
+          Protocol (HTTP).</p></li>
+      
+          <li>
+        <p>Node.js has a built-in module called File System, which allows you to work with the file system on your
+          computer.</p></li>
+        <li>Asynchronous and event-driven</li>
+        <li>Fast performance</li>
+        <li>Scalable</li>
+        <li>Runs on multiple platforms</li>
+        <li>Large and active developer community</li>
+        <li>Allows for easy sharing and reuse of code through npm</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>© 2023 Node.js Blog</p>
+  </footer>
+
+</body>
+
+</html>

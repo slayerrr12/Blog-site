@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction to JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffae00;
+}
+
+/* Main Styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+h2 {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  animation: slideInDown 0.5s ease-in-out;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+pre {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+code {
+  font-family: Consolas, monospace;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: disc;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Button Styles */
+.button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #ffae00;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  animation: slideInUp 0.5s ease-in-out;
+}
+
+footer p {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Animations */
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1
+  }
+}
+
+</style>
+<body>
+	<header>
+		<h1>Introduction to SQL</h1>
+		<nav>
+			<ul>
+				<li><a href="#what-is-sql">What is SQL?</a></li>
+				<li><a href="#sql-syntax">SQL Syntax</a></li>
+				<li><a href="#sql-features">SQL Features</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="what-is-sql">
+			<h2>What is SQL?</h2>
+			<p>SQL (Structured Query Language) is a programming language used to manage and manipulate data in relational databases. It is widely used in business and industry for managing data and is considered the standard language for relational database management systems (RDBMS).</p>
+			<p>SQL allows users to create, modify, and retrieve data from databases. It is used to create tables, define relationships between tables, and perform various data manipulation operations.</p>
+		</section>
+		<section id="sql-syntax">
+			<h2>SQL Syntax</h2>
+			<p>SQL syntax is designed to be simple and easy to use. It is composed of statements that are used to create, modify, and retrieve data from databases.</p>
+			<p>Here is an example of SQL syntax:</p>
+			<pre>
+				<code>SELECT * FROM customers WHERE city = 'New York';</code>
+			</pre>
+			<p>In this example, we are using the SELECT statement to retrieve all the data from the customers table where the city column equals 'New York'.</p>
+		</section>
+		<section id="sql-features">
+			<h2>SQL Features</h2>
+			<p>SQL includes many features that make it a powerful and essential tool for managing data in relational databases.</p>
+			<ul>
+				<li><strong>Data Definition Language (DDL):</strong> SQL includes statements for creating and modifying the structure of databases, such as creating tables, adding or removing columns, and setting up relationships between tables.</li>
+				<li><strong>Data Manipulation Language (DML):</strong> SQL includes statements for manipulating data in tables, such as adding, updating, and deleting records.</li>
+				<li><strong>Query Language:</strong> SQL includes a powerful query language for retrieving data from one or more tables in a database. It allows users to filter, sort, and group data using various operators and functions.</li>
+				<li><strong>Transaction Control:</strong> SQL includes statements for managing transactions, which allows users to ensure that multiple database operations are executed as a single unit of work.</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<p style="color: #ccc;">&copy; 2023 My Blog. All rights reserved.</p>
+	</footer>
+</body>
+</html>
+
